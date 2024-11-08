@@ -73,7 +73,7 @@ img{
     width: 280px;
     height: 280px;
 }
-#contents{
+.contents{
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -83,6 +83,7 @@ img{
     align-items: center;
     margin: 20px auto;
     max-width: 960px;
+    padding: 10px;
 }
 
 .works-inner{
