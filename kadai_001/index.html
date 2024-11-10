@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <body>
         <!-- ヘッダー -->
         <header>
@@ -17,8 +18,8 @@
                 <!-- ナビ -->
                  <nav>
                     <ul class="menu">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about" class="menu1">About</a></li>
+                        <li><a href="index.html#work-box" class="menu2">Work</a></li>
                     </ul>
                  </nav>
             </div>
@@ -26,7 +27,13 @@
         <!-- メイン -->
          <main>
             <article>
-                <div><img class="mainpic" src="image/main.png" alt="メイン画像"></div>
+                <section id="carousel-section">
+                    <div class="carousel">
+                        <div><img class="mainpic" src="image/main.png" alt="メイン画像"></div>
+                        <div><img class="mainpic" src="image/main2.png" alt="メイン画像2"></div>
+                        <div><img class="mainpic" src="image/main3.png" alt="メイン画像3"></div>
+                    </div>
+                </section>
                 <!-- about -->
                  <section class="about">
                     <h2 id="about">About</h2>
@@ -63,11 +70,22 @@
                     </div>
                   </section>
             </article>
+            <a id="backBtn" href="index.html">TOP</a>
+
+            <div class="modal">
+                <img src="" alt="" class="big-img">
+                <span class="close-btn">✖</span>
+              </div>
+          
          </main>
 
          <!-- footer -->
           <footer>
             <p>&copy; MyProfile. All rights reserved.</p>
           </footer>
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script src="script.js"></script>
     </body>
 </html>
